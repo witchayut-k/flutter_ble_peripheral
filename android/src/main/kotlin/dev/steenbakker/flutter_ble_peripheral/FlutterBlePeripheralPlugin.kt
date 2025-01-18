@@ -194,7 +194,7 @@ class FlutterBlePeripheralPlugin : FlutterPlugin, MethodChannel.MethodCallHandle
             (arguments["setconnectable"] as Boolean?)?.let { advertiseSettingsSet.setConnectable(it) }
             (arguments["setsetIncludeTxPower"] as Boolean?)?.let { advertiseSettingsSet.setIncludeTxPower(it) }
             (arguments["setinterval"] as Int?)?.let { advertiseSettingsSet.setInterval(it) }
-            (arguments["setlegacyMode"] as Boolean?)?.let { advertiseSettingsSet.setLegacyMode(it) }
+            (arguments["setlegacyMode"] as Boolean?)?.let { advertiseSettingsSet.setLegacyMode(true) }
             (arguments["setprimaryPhy"] as Int?)?.let { advertiseSettingsSet.setPrimaryPhy(it) }
             (arguments["setscannable"] as Boolean?)?.let { advertiseSettingsSet.setScannable(it) }
             (arguments["setsecondaryPhy"] as Int?)?.let { advertiseSettingsSet.setSecondaryPhy(it) }
